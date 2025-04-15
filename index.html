@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Styles généraux */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000428, #004e92);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            margin: 0 0 1rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <div class="card">
+                <h2>À propos de moi</h2>
+                <p>Passionné par le développement web et l'exploration de l'univers, je crée des expériences numériques uniques et immersives.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <div class="card">
+                <h2>Projet 1</h2>
+                <p>Un projet fascinant qui combine technologie et créativité.</p>
+            </div>
+            <div class="card">
+                <h2>Projet 2</h2>
+                <p>Une application innovante pour résoudre des problèmes complexes.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <div class="card">
+                <h2>Contactez-moi</h2>
+                <p>Email : <a href="mailto:example@example.com" style="color: #00d4ff;">example@example.com</a></p>
+                <p>Téléphone : 123-456-7890</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
